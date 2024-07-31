@@ -8,7 +8,7 @@ const List = ({ people, toggleFavorite }) => {
   return (
     <>
       {people.map((person) => {
-        const { id, name, age, image, isFavorite } = person;
+        const { id, name, last, image, isFavorite } = person;
         return (
           <article key={id} className='person'>
             <label>
@@ -22,7 +22,7 @@ const List = ({ people, toggleFavorite }) => {
             <img src={image} alt={name} />
             <div>
               <h4>{name}</h4>
-              <p>{age} years</p>
+              <p>{last} days</p>
 
             </div>
           </article>
