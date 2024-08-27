@@ -55,19 +55,28 @@ function App() {
   };
 
   return (
-    <main>
-      <section className="container">
-        <h3>{people.length} Friends</h3>
+    <main className="min-h-screen flex justify-center items-center bg-gray-200">
+      <section className="w-11/12 max-w-md bg-white rounded-lg p-6 shadow-lg">
+        <h3 className="text-lg font-normal text-gray-800 mb-8">{people.length} Friends</h3>
         <List people={people} toggleFavorite={toggleFavorite} />
         {showUndo && (
-          <button onClick={handleUndo}>
+          <button
+            onClick={handleUndo}
+            className="w-full bg-pink-500 text-white py-2 rounded-lg mt-4 transition hover:bg-pink-600"
+          >
             Undo
           </button>
         )}
-        <button onClick={handleRemove}>
+        <button
+          onClick={handleRemove}
+          className="w-full bg-pink-500 text-white py-2 rounded-lg mt-4 transition hover:bg-pink-600"
+        >
           Clear Selected
         </button>
-        <button onClick={handleClear}>
+        <button
+          onClick={handleClear}
+          className="w-full bg-pink-500 text-white py-2 rounded-lg mt-4 transition hover:bg-pink-600"
+        >
           {isCleared ? 'Undo Clear All' : 'Clear All'}
         </button>
       </section>
