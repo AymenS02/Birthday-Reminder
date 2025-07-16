@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "@heroui/react": "^2.8.0-beta.11",
-    "motion": "^12.20.1",
+    "@motionone/react": "^10.16.4",
+    "motion": "^12.23.0",
     "next": "15.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

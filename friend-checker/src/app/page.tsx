@@ -1,7 +1,6 @@
 import React from 'react';
 import './globals.css';
 import { Button } from '@heroui/button';
-import { Motion } from "motion";
 
 export default function Home() {
   return (
@@ -13,15 +12,8 @@ export default function Home() {
         <p className="mt-4 text-lg text-foreground">
           This app helps you keep track of your friends and the last time you spoke to them.
         </p>
+        <Button className="bg-amber-300" isDisabled size="sm">Click me</Button>
 
-        <Motion.div
-          className="mt-8"
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <Button className="bg-amber-300" isDisabled size="sm">Click me</Button>
-        </Motion.div>
       </div>
     </div>
   );
